@@ -1,14 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet shop</title>
 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    
+
+<body onresize="changedSize()">
+    <header class="header" id="home">
+        <div class="top">
+            <a href="#"><img src="src/imagens/logo.png" alt="Logo"></a>
+            <nav>
+                <button onclick="menuShow()"><img src="src/imagens/close.png" alt="botão do menu" class="icon"></button>
+                <ul class="menu open">
+                    <li><a href="#shop-dog">SHOP FOR DOG</a></li>
+                    <li><a href="#shop-cat">SHOP FOR CAT</a></li>
+                    <li><a href="#our-story">OUR STORY</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <div class="racao">
+                <img src="src/imagens/racao.png" alt="Ração">
+            </div>
+
+            <div class="container-titulo">
+                <h1 class="titulo">HELP YOUR DOG MAINTAIN <br> A <span>HEALTHIER WEIGHT WITH</span></h1>
+                <div class="conteudo-balao">
+                    <img src="src/imagens/balao.png" alt="Balão de diálogo">
+                    <h2>100% ORGANIC <br> PET FOOD</h2>
+                </div>
+                
+            </div>
+            <div class="dog-hero">
+                <img src="src/imagens/Dog-1-reduz.png" alt="Cão">
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <section class="our-story" id="our-story">
+            <div class="story-conteudo">
+                <h2>OUR<br>STORY</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad sapiente. Deleniti aut ipsum facere,
+                    error odio ullam officia, tenetur cum quibusdam quas quae perspiciatis dolorem quod, optio sequi
+                    explicabo.
+                </P>
+                <img src="src/imagens/racao.png" alt="Ração">
+            </div>
+            <div class="cao-deitado">
+                <img src="src/imagens/cao-1.png" alt="Cão deitado">
+                <img src="src/imagens/elemento.png" alt="Elemento">
+            </div>
+        </section>
+
+        <section class="story-ingredient">
+            <h2>OUR NO. I INGREDIENT: <br>
+                <span>REAL CHICKEN & EGG</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, odit doloribus. Culpa molestiae
+                voluptas doloremque nemo delectus rem iste, saepe ab non voluptatibus odit. Perferendis aut delectus
+                neque perspiciatis commodi.</p>
+        </section>
+
+        <section class="start-life">
+            <div>
+                <h1>THE PERFECT STAR TO LIFE</h1>
+                <p> Lorem ipsum dolor site amet, consectetus sdidpscing elit, sed do eiusmad tempar incididunt ut labore
+                    er dolore magna aliqua.
+                </p>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="cao-preto">
+                <img src="src/imagens/cao-2.png" alt="Cão">
+            </div>
+        </section>
+
+        <section class="learn-more">
+            <div class="breeds">
+                <h3>LEARN MORE ABOUT DOG BREEDS</h3>
+                <div class="search">
+                    <input type="text" class="input-search">
+                    <i>icone lupa</i>
+                </div>
+                <a href="#">VIEW ALL DOG BREEDS</a>
+            </div>
+            <div class="standing-dog">
+                <img src="src/imagens/cao-3.png" alt="Cão em pé">
+            </div>
+            <div class="getting-dog">
+                <h3>THINKING OF GETTING A DOG?</h3>
+                <p>There are many things you need to know before getting a dog.</p>
+                <!-- mont  regular -->
+                <a href="#">LEARN MORE</a>
+                <!-- mont bold -->
+            </div>
+        </section>
+
+        <section class="products">
+            <div>
+                <img src="src/imagens/racao.png" alt="Ração">
+            </div>
+            <div class="products-info">
+                <p>Each formula has been created to deliver nutrition tailored to your dog's health needs whatever their
+                    size, breed, age, or lifestyle.</p>
+                <!-- mont  reguular -->
+                <a href="#">VIEW ALL PRODUCTS</a>
+                <!-- mont bold -->
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="balloon">
+                <img src="src/imagens/balao-footer.png" alt="balão de diálogo">
+                <img src="src/imagens/logo.png" alt="Logo">
+                <img src="src/imagens/cao-footer.jpg" alt="Cão">
+            </div>
+            <ul class="menu-footer">
+                <li><a href="#shop-dog">SHOP FOR DOG</a></li>
+                <li><a href="#shop-cat">SHOP FOR CAT</a></li>
+                <li><a href="#our-story">OUR STORY</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+            <p> Company Name 2022.All rights reserved.</p>
+            <!-- mont medium  -->
+            <div class="social" id="contact">
+                <!-- mont bold -->
+            </div>
+        </footer>
+    </main>
+
 </body>
+
 </html>
