@@ -7,46 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet shop</title>
 
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 
 <body onresize="changedSize()">
     <header class="header" id="home">
-        <div class="top">
-            <a href="#"><img src="src/imagens/logo.png" alt="Logo"></a>
-            <nav>
-                <button onclick="menuShow()"><img src="src/imagens/close.png" alt="botão do menu" class="icon"></button>
-                <ul class="menu open">
-                    <li><a href="#shop-dog">SHOP FOR DOG</a></li>
-                    <li><a href="#shop-cat">SHOP FOR CAT</a></li>
-                    <li><a href="#our-story">OUR STORY</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section class="hero">
-            <div class="racao">
-                <img src="src/imagens/racao.png" alt="Ração">
+        <div class="centralizar">
+            <div class="top">
+                <a href="#"><img src="src/imagens/logo.png" alt="Logo"></a>
+                <nav>
+                    <button onclick="menuShow()"><img src="src/imagens/close.png" alt="botão do menu"
+                            class="icon"></button>
+                    <ul class="menu open">
+                        <li><a href="#shop-dog">SHOP FOR DOG</a></li>
+                        <li><a href="#shop-cat">SHOP FOR CAT</a></li>
+                        <li><a href="#our-story">OUR STORY</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </nav>
             </div>
+            <section class="hero">
 
-            <div class="container-titulo">
-                <h1 class="titulo">HELP YOUR DOG MAINTAIN <br> A <span>HEALTHIER WEIGHT WITH</span></h1>
-                <div class="conteudo-balao">
-                    <img src="src/imagens/balao.png" alt="Balão de diálogo">
-                    <h2>100% ORGANIC <br> PET FOOD</h2>
+                <div class="racao">
+                    <img src="src/imagens/racao2.png" alt="Ração">
                 </div>
-                
-            </div>
-            <div class="dog-hero">
-                <img src="src/imagens/Dog-1-reduz.png" alt="Cão">
-            </div>
-        </section>
+                <div class="container-titulo">
+                    <h1 class="titulo">Help your Dog Maintain <br> a <span>Healthier Weight</span> with </h1>
+                    <div class="conteudo-balao">
+                        <img src="src/imagens/balao.png" alt="Balão de diálogo">
+                        <h2>100% ORGANIC <br> PET FOOD</h2>
+                    </div>
+                </div>
+
+                <div class="dog-hero">
+                    <img src="src/imagens/Dog-1-reduz.png" alt="Cão">
+                </div>
+            </section>
+        </div>
     </header>
     <main class="container">
         <section class="our-story" id="our-story">
@@ -56,7 +66,7 @@
                     error odio ullam officia, tenetur cum quibusdam quas quae perspiciatis dolorem quod, optio sequi
                     explicabo.
                 </P>
-                <img src="src/imagens/racao.png" alt="Ração">
+                <img src="src/imagens/racao2.png" alt="Ração">
             </div>
             <div class="cao-deitado">
                 <img src="src/imagens/cao-1.png" alt="Cão deitado">
@@ -68,9 +78,7 @@
             <h2>OUR NO. I INGREDIENT: <br>
                 <span>REAL CHICKEN & EGG</span>
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, odit doloribus. Culpa molestiae
-                voluptas doloremque nemo delectus rem iste, saepe ab non voluptatibus odit. Perferendis aut delectus
-                neque perspiciatis commodi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
 
         <section class="start-life">
@@ -109,7 +117,7 @@
 
         <section class="products">
             <div>
-                <img src="src/imagens/racao.png" alt="Ração">
+                <img src="src/imagens/racao2.png" alt="Ração">
             </div>
             <div class="products-info">
                 <p>Each formula has been created to deliver nutrition tailored to your dog's health needs whatever their
@@ -121,22 +129,35 @@
         </section>
 
 
-        <footer>
-            <div class="balloon">
-                <img src="src/imagens/balao-footer.png" alt="balão de diálogo">
-                <img src="src/imagens/logo.png" alt="Logo">
-                <img src="src/imagens/cao-footer.jpg" alt="Cão">
+        <footer class="footer">
+            <div class="content-dog">
+                <img src="src/imagens/cao-footer.jpg" alt="Cão" class="cao-footer">
             </div>
-            <ul class="menu-footer">
-                <li><a href="#shop-dog">SHOP FOR DOG</a></li>
-                <li><a href="#shop-cat">SHOP FOR CAT</a></li>
-                <li><a href="#our-story">OUR STORY</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
-            <p> Company Name 2022.All rights reserved.</p>
-            <!-- mont medium  -->
-            <div class="social" id="contact">
-                <!-- mont bold -->
+
+            <div class="conteudo-footer">
+                <div class="balloon">
+                    <div class="balao-footer">
+                        <img src="src/imagens/balao-footer1.png" alt="balão de diálogo" class="balao-imagem">
+                        <img src="src/imagens/logo.png" alt="Logo" class="logo">
+                    </div>
+                </div>
+                <ul class="menu-footer">
+                    <li><a href="#shop-dog">SHOP FOR DOG</a></li>
+                    <li><a href="#shop-cat">SHOP FOR CAT</a></li>
+                    <li><a href="#our-story">OUR STORY</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+                <div class="container-social">
+                    <div class="social" id="contact">
+                        <!-- mont bold -->
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <p> Company Name 2022.All rights reserved.</p>
+                    <!-- mont medium  -->
+                </div>
             </div>
         </footer>
     </main>

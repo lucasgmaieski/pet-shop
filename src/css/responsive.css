@@ -1,0 +1,48 @@
+@media (max-width: 725px) {
+    
+    .racao {
+        order:0;
+    }
+    .racao img {
+        /* left: 0; */
+        position: static;
+        width: clamp(21rem, 40vw, 35rem);
+        padding: 2rem 0;
+    }
+    .racao-titulo {
+        display: flex;
+    }
+    .container-titulo {
+        margin-left: 0;
+    }
+    .container-titulo .conteudo-balao img{
+        /* margin-left: 0; */
+        width: clamp(27rem, 70vw, 56rem);
+    }
+    .container-titulo .conteudo-balao h2{
+        right: 35%;
+    }
+    .dog-hero{
+        /* margin-left: 30%; */
+        order: 3;
+    }
+    .dog-hero img{
+        width: clamp(22rem, 70vw, 47rem);
+    }
+
+
+
+    .footer .conteudo-footer .container-social{
+        flex-direction: column;
+    }
+    .footer .conteudo-footer .container-social .social {
+        order: 0;
+    }
+} 
+
+
+@media (min-width: 1550px) {
+    .hero {
+        flex-wrap: nowrap;
+    }
+}
