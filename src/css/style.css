@@ -15,6 +15,7 @@ html{
     --color-4: #000000;
     --color-5: #ffffff;
     --color-6: #eeeef0;
+    --color-7: #f0f0f0;
 
     --font-1: 'Montserrat', sans-serif;
     --font-2: 'Amatic SC', 'cursive';
@@ -29,6 +30,13 @@ h1, h2, h3 {
 p {
     font-family: var(--font-1);
 }
+a {
+    font-family: var(--font-1);
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
 .header {
     background-image: url(../imagens/background-header.png);
     background-repeat: no-repeat;
@@ -38,7 +46,11 @@ p {
 .header .top {
     display: flex;
     justify-content: space-between;
+    padding-top: 3rem;
 
+}
+.header .top a img{
+    width: clamp(21rem, 30vw, 26rem);
 }
 
 .centralizar{
@@ -101,27 +113,68 @@ p {
 }
 
 .container {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 .container .our-story {
     position: relative;
+    padding: 6rem 0rem;
 }
 .container .our-story .story-conteudo {
     display: flex;
+    justify-content: space-around;
+    padding-left: 15%;
+    
+}
+.container .our-story .story-conteudo h2 {
+    /* width: 15%; */
+    padding-right: 3rem;
+    color: var(--color-1);
+    font-family: var(--font-1);
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+.container .our-story .story-conteudo h2 span {
+    color: var(--color-2);
+    font-size: clamp(2.4rem, 5vw, 10rem);
+}
+.container .our-story .story-conteudo .text-image {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .our-story .story-conteudo .text-image > div {
+    /* width: 40%; */
+    max-width: 45%;
+    flex: 1 ;
+    /* margin-left: 2rem; */
+    /* padding: 4rem; */
+}
+
+.container .our-story .story-conteudo .text-image > div > p {
+    padding-bottom: 2rem;
+    font-size: clamp(1.4rem, 1.5vw, 2rem);
+}
+.container .our-story .story-conteudo .text-image > div > a {
+    color: var(--color-2);
+    font-weight: 500;   
+    letter-spacing: .2rem;
+    z-index: 99;
+}
+.container .our-story .story-conteudo .text-image div >img{
+    width: clamp(20rem, 20vw, 25rem);
 }
 .container .our-story .cao-deitado {
     width: clamp(27rem, 30vw, 43rem);
     position: absolute;
-    bottom: -20rem;
+    /* bottom: -23rem; */
+    top: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    pointer-events: none;
 }
 .container .our-story .cao-deitado img:first-child {
-    width: clamp(20rem, 35vw, 43rem);
+    width: clamp(17rem, 35vw, 43rem);
 }
 .container .our-story .cao-deitado img:last-child {
-    width: clamp(10rem, 15vw, 23rem);
+    width: clamp(10rem, 12vw, 23rem);
 }
 
 .container .story-ingredient {
@@ -133,20 +186,188 @@ p {
     color: var(--color-5);
 }
 .container .story-ingredient h2 {
-    font-size: clamp(2.4rem, 4vw, 2.8rem);
+    font-size: clamp(2.0rem, 2vw, 3.6rem);
     padding-bottom: 4rem;
 }
 .container .story-ingredient h2 span {
-    font-size: clamp(2.4rem, 4vw, 4.8rem);
+    font-size: clamp(2.4rem, 4vw, 5.2rem);
 }
 .container .story-ingredient p {
-    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-size: clamp(1.4rem, 2vw, 2rem);
     padding: 0 20% ;
 }
 
 
+.container .start-life {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .start-life div {
+    width: clamp(20rem, 45vw, 64rem);
+    padding-left: 2rem;
+}
+.container .start-life > div > h2 {
+    font-size: clamp(3.6rem, 4vw, 5.5rem);
+    padding-bottom: 1rem;
+}
+.container .start-life > div > p {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    padding-bottom: 3rem;
+}
+.container .start-life > div > a {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-weight: 600;
+    padding: 1.2rem;
+}
+.container .start-life .dog-black {
+    width: fit-content;
+}
+.container .start-life .dog-black img {
+    width: clamp(17rem, 25vw, 35rem);
+}
 
 
+
+.container .breeds-getting {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-7);
+    padding: 10rem 0;
+}
+.container .start-life > div > a,
+.container .breeds-getting a,
+.container .products a {
+    color: var(--color-5);
+    background-color: var(--color-2);
+    transition: .6s ease-in-out;
+}
+.container .start-life > div > a:hover,
+.container .breeds-getting a:hover,
+.container .products a:hover {
+    letter-spacing: .2rem;
+}
+.container .breeds-getting .breeds {
+    width: clamp(25rem, 30vw, 40rem);
+    margin-right: 28%;
+    padding: 0 2rem;
+}
+.container .breeds-getting .breeds h3 {
+    font-size: clamp(2.4rem, 3vw, 3.3rem);
+    padding-bottom: 1rem;
+}
+.container .breeds-getting .breeds .search {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    margin-bottom: 4rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+    border: none;
+    border-bottom: .1rem solid var(--color-4);
+    background-color: var(--color-7);
+}
+.container .breeds-getting .breeds .search input {
+    width: 100%;
+}
+
+.container .breeds-getting .breeds .search a {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    background-color: var(--color-7);
+    display: inline-block;
+}
+.container .breeds-getting .breeds .search a .search-icon {
+    width: 2.5rem;
+    color: var(--color-4)
+}
+.search .input-search {
+    
+    border: none;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    margin-right:.3rem ;
+    background-color: var(--color-7);
+}
+.search .input-search:focus{
+    border: none;
+    outline: none;
+}
+
+.container .breeds-getting .breeds .search .search-icon {
+    position: absolute;
+    right: 0;
+}
+.container .breeds-getting .breeds a {
+    font-size: clamp(.7rem, 1.5vw, 1.6rem);
+    font-weight: 600;
+    padding: 1.2rem 1.2rem;
+    text-align: center;
+}
+
+.container .breeds-getting .standing-dog {
+    position: absolute;
+}
+.container .breeds-getting .standing-dog img {
+    width: clamp(12rem, 25vw, 26rem);
+}
+
+.container .breeds-getting .getting-dog {
+    width: clamp(25rem, 30vw, 40rem);
+    padding: 0 2rem;
+}
+.container .breeds-getting .getting-dog h3 {
+    font-size: clamp(2.4rem, 3vw, 3.3rem);
+    padding-bottom: 1rem;
+}
+.container .breeds-getting .getting-dog p {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    padding-bottom: 4rem;
+}
+.container .breeds-getting .getting-dog a {
+    font-size: clamp(.7rem, 1.5vw, 1.6rem);
+    font-weight: 600;
+    padding: 1.2rem 1.6rem;
+    text-align: center;
+}
+
+
+
+
+.container .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+}
+.container .products .product {
+    width: fit-content;
+}
+.container .products .product img {
+    width: clamp(18rem, 30vw, 22rem);
+}
+.container .products .products-info {
+    width: clamp(20rem, 40vw, 56rem);
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.container .products .products-info h2 {
+    font-size: clamp(3.6rem, 2.5vw, 3.3rem);
+    padding-bottom: 1rem;
+}
+.container .products .products-info p {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    padding-bottom: 4rem;
+}
+.container .products .products-info a {
+    font-size: clamp(.7rem, 1.5vw, 1.6rem);
+    font-weight: 600;
+    padding: 2rem 2rem;
+    text-align: center;
+    width: fit-content;
+}
 
 
 
@@ -160,29 +381,74 @@ p {
     margin: auto;
     background-color: var(--color-6);
     margin-top: 5rem;
+    margin-bottom: 3rem;
     padding-top: 3rem;
 }
 .footer .content-dog {
-    /* flex: 1; */
+    align-self: flex-end;
 }
 .footer .content-dog img {
-    width: clamp(20rem, 45vw, 62rem);
+    width: clamp(20rem, 50vw, 62rem);
 }
 
 .footer .conteudo-footer {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.footer .conteudo-footer ul {
+    /* width: clamp(11rem, 30vw, 40rem); */
+    max-width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .conteudo-footer ul > li {
+    padding-right: 2rem;
+    padding-top: 1rem;
+    transition: 0.3s ease-in-out;
+}
+.footer .conteudo-footer ul > li:hover {
+    opacity: .6;
+}
+.footer .conteudo-footer ul > li > a {
+    color: var(--color-1);
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+    font-weight: 700;
+}
+
 .footer .conteudo-footer .container-social {
     display: flex;
     justify-content: space-between;
 }
 .footer .conteudo-footer .container-social .social {
     order: 2;
-    padding-right: 2rem;
+    padding-top: 1rem;
+}
+.footer .conteudo-footer .container-social .social a {
+    /* background-color: var(--color-2); */
+    display: inline-block;
+    padding-right: .4rem;
+}
+.footer .conteudo-footer .container-social .social > a > .icon {
+    color: var(--color-5);
+    background-color: var(--color-2);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: .4rem;
+}
+.footer .conteudo-footer .container-social .social > a > .icon:hover {
+    background-color: var(--color-5);
+    color: var(--color-2);
+}
+
+.footer .conteudo-footer .container-social p {
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    padding: 2rem 1rem 1.5rem 0;
 }
 .balloon {
     display: flex;
-    
 }
 .balloon .balao-footer{
     position: relative;
