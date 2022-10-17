@@ -46,11 +46,36 @@ ul li {
 .header .top {
     display: flex;
     justify-content: space-between;
-    padding-top: 3rem;
+    align-items: center;
+    padding: 3rem 3rem;
 
 }
 .header .top a img{
     width: clamp(21rem, 30vw, 26rem);
+}
+
+.header .top a {
+    color: var(--color-5);
+}
+.header .top nav button {
+    display: none;
+}
+.header .top nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+.header .top nav ul li {
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+.header .top nav ul li a {
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 500;
+    padding-bottom: .6rem;
+}
+.header .top nav ul li a:hover {
+    border-bottom: 0.2rem solid var(--color-5);
 }
 
 .centralizar{
@@ -82,7 +107,6 @@ ul li {
 .container-titulo {
     text-align: center;
     max-width: fit-content;
-    /* flex: 1 1 27rem; */
     margin-left: 30%;
 }
 .container-titulo .titulo {
@@ -97,19 +121,15 @@ ul li {
 }
 .container-titulo .conteudo-balao img {
     width: clamp(27rem, 35vw, 56rem);
-    /* max-width: 56rem; */
-    /* min-width: 30rem; */
 }
 .container-titulo .conteudo-balao h2 {
     position: absolute;
     top: 50%;
-    right: 28%;
+    right: 30%;
     transform: rotateZ(-15deg) translateY(-60%);
     font-size: clamp(2.4rem, 4vw, 4.8rem);
     font-weight: 700;
     color: var(--color-3);
-    
-    
 }
 
 .container {
@@ -123,7 +143,6 @@ ul li {
     display: flex;
     justify-content: space-around;
     padding-left: 15%;
-    
 }
 .container .our-story .story-conteudo h2 {
     /* width: 15%; */
@@ -141,11 +160,8 @@ ul li {
     justify-content: space-evenly;
 }
 .container .our-story .story-conteudo .text-image > div {
-    /* width: 40%; */
     max-width: 45%;
     flex: 1 ;
-    /* margin-left: 2rem; */
-    /* padding: 4rem; */
 }
 
 .container .our-story .story-conteudo .text-image > div > p {
@@ -164,7 +180,6 @@ ul li {
 .container .our-story .cao-deitado {
     width: clamp(27rem, 30vw, 43rem);
     position: absolute;
-    /* bottom: -23rem; */
     top: 0;
     display: flex;
     flex-direction: column;
@@ -197,7 +212,6 @@ ul li {
     padding: 0 20% ;
 }
 
-
 .container .start-life {
     margin: 8rem 0;
     display: flex;
@@ -227,8 +241,6 @@ ul li {
 .container .start-life .dog-black img {
     width: clamp(17rem, 25vw, 35rem);
 }
-
-
 
 .container .breeds-getting {
     position: relative;
@@ -261,7 +273,7 @@ ul li {
 }
 .container .breeds-getting .breeds .search {
     font-size: clamp(1rem, 2.5vw, 1.6rem);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     padding-bottom: 1.2rem;
     position: relative;
     border: none;
@@ -271,7 +283,6 @@ ul li {
 .container .breeds-getting .breeds .search input {
     width: 100%;
 }
-
 .container .breeds-getting .breeds .search a {
     position: absolute;
     top: -1rem;
@@ -323,7 +334,7 @@ ul li {
 }
 .container .breeds-getting .getting-dog p {
     font-size: clamp(1rem, 2.5vw, 1.6rem);
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 .container .breeds-getting .getting-dog a {
     font-size: clamp(.7rem, 1.5vw, 1.6rem);
@@ -331,9 +342,6 @@ ul li {
     padding: 1.2rem 1.6rem;
     text-align: center;
 }
-
-
-
 
 .container .products {
     display: flex;
@@ -369,11 +377,6 @@ ul li {
     width: fit-content;
 }
 
-
-
-
-
-
 .footer {
     max-width: 144rem;
     display: flex;
@@ -398,7 +401,6 @@ ul li {
     justify-content: space-between;
 }
 .footer .conteudo-footer ul {
-    /* width: clamp(11rem, 30vw, 40rem); */
     max-width: 40rem;
     display: flex;
     flex-wrap: wrap;
@@ -446,6 +448,7 @@ ul li {
 .footer .conteudo-footer .container-social p {
     font-size: clamp(1rem, 1.5vw, 1.4rem);
     padding: 2rem 1rem 1.5rem 0;
+    text-align: center;
 }
 .balloon {
     display: flex;
