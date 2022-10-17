@@ -103,6 +103,7 @@ ul li {
 }
 .dog-hero img{
     width: clamp(22rem, 30vw, 47rem);
+    height: 100%;
 }
 .container-titulo {
     text-align: center;

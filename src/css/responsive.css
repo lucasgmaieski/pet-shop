@@ -24,9 +24,7 @@
     .header .top nav ul {
         position: absolute;
         right: 0;
-        /* padding-top: 2rem; */
         width: 20rem;
-        /* background-color: #94c4db; */
         background: rgb(148,196,219);
         background: radial-gradient(circle, rgba(148,196,219,1) 0%, rgba(189,226,244,1) 100%);
         border-radius: 12px 0 12px 12px;
@@ -46,7 +44,6 @@
     .header .top nav ul li a:first-child {
         margin-top: 0rem;
     }
-
 
     .racao {
         order:0;
@@ -101,7 +98,7 @@
     }
 
     .container .our-story .cao-deitado {
-        top: 50%;
+        top: 55%;
     }
 
 

@@ -13,6 +13,7 @@ function changedSize() {
     let menuMobile = document.querySelector('.menu');
     if (window.innerWidth <= 760) {
         menuMobile.classList.add('open');
+        document.querySelector('.icon-menu').src = "src/imagens/menu.png";
     } else {
         menuMobile.classList.remove('open');
     }
